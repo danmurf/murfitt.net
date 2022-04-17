@@ -12,7 +12,6 @@ resource "digitalocean_app" "murfittnet" {
     # }
 
     static_site {
-      environment_slug = "hugo"
       name          = "murfittnet"
       build_command = "rm -r ./public; hugo --destination ./public --minify"
       output_dir    = "/public"
