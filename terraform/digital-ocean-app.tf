@@ -12,6 +12,7 @@ resource "digitalocean_app" "murfittnet" {
     # }
 
     static_site {
+      environment_slug = "hugo"
       name          = "murfittnet"
       build_command = "rm -r ./public; hugo --destination ./public --minify"
       output_dir    = "/public"
@@ -21,6 +22,15 @@ resource "digitalocean_app" "murfittnet" {
         deploy_on_push = true
         repo           = "danmurf/murfittnet"
       }
+    }
+    env {
+      key = "HUGO_VERSION"
+      value = "0.97.0"
+    }
+
+    env {
+      key = "HUGO_EXTENDED"
+      value = "1"
     }
   }
 }
