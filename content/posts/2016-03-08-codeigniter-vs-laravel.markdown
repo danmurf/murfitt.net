@@ -2,7 +2,7 @@
 title: "CodeIgniter vs. Laravel"
 date: "2016-03-08 22:06:00 +0000"
 tags: [ "CodeIgniter", "Laravel" ]
-aliases: ["blog/codeigniter-vs-laravel"]
+aliases: ["/blog/codeigniter-vs-laravel"]
 ---
 It's not always easy to give a definite winner with these sorts of comparisons, as depends what your requirements and preferences are. So, here are a few areas worth thinking about when weighing up CodeIgniter against Laravel.
 

@@ -2,7 +2,7 @@
 title: "Book review: CodeIgniter 1.7 by Jose Argudo Blanco and David Upton (Packt Publishing)"
 date: "2010-02-27 19:53:00 +0000"
 tags: [ "Web Development", "PHP", "CodeIgniter" ]
-aliases: ["blog/book-review-codeigniter-17-jose-argudo-blanco-and-david-upton-packt-publishing"]
+aliases: ["/blog/book-review-codeigniter-17-jose-argudo-blanco-and-david-upton-packt-publishing"]
 ---
 
 The [CodeIgniter framework](http://www.codeigniter.com/) is a secret weapon for many web developers as it allows you to quickly build complex web applications in a structured and organised way. I started using CodeIgniter over a year ago now so I've approached Packt's CodeIgniter 1.7 by Jose Argudo Blanco and David Upson as a way of expanding upon when I've already learnt from the user guide, forums and a book which I had previously read from Wrox called Professional CodeIgniter by Thomas Myer.

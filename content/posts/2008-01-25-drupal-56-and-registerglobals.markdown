@@ -2,7 +2,7 @@
 title: "Drupal 5.6 and register_globals"
 date: "2008-01-25 19:37:00 +0000"
 tags: [ "Drupal", "PHP" ]
-aliases: ["blog/drupal-56-and-registerglobals"]
+aliases: ["/blog/drupal-56-and-registerglobals"]
 ---
 As of Drupal 5.6 you will no longer be able to install the CMS onto a server with `register_globals` enabled. The notice on the Drupal website says:
 

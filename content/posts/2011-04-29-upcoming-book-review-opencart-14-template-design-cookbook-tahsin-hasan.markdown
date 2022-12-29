@@ -2,7 +2,7 @@
 title: "Upcoming book review: OpenCart 1.4 Template Design Cookbook by Tahsin Hasan"
 date: "2011-04-29 15:35:00 +0000"
 tags: [ "OpenCart" ]
-aliases: ["blog/upcoming-book-review-opencart-14-template-design-cookbook-tahsin-hasan"]
+aliases: ["/blog/upcoming-book-review-opencart-14-template-design-cookbook-tahsin-hasan"]
 ---
 Packt Publishing kindly asked me to write another review for an upcoming book: OpenCart 1.4 Template Design Cookbook. The book covers a range of techniques for customising the header, footer, store navigation, creating dynamic content, custom error pages and sitemaps. The author, Tahsin Hasan, is a fellow CodeIgniter developer and has worked with other PHP frameworks such as Zend, Symfony and CakePHP.
 

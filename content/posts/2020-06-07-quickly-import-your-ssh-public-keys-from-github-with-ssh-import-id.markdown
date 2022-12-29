@@ -2,7 +2,7 @@
 title: "Quickly import your ssh public keys from Github with ssh-import-id"
 date: "2020-06-07 12:00:00 +0100"
 tags: [ "Ubuntu", "Security", "ssh" ]
-aliases: ["blog/quickly-import-your-ssh-public-keys-from-github-with-ssh-import-id"]
+aliases: ["/blog/quickly-import-your-ssh-public-keys-from-github-with-ssh-import-id"]
 ---
 There's a neat Ubuntu command which allows you to easily import your ssh public keys from Github to your server user account.
 

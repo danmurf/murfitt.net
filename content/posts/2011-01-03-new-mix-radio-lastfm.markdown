@@ -2,7 +2,7 @@
 title: "New 'Mix Radio' on Last.fm"
 date: "2011-01-03 10:05:00 +0000"
 tags: [ "Music", "Last.FM" ]
-aliases: ["blog/new-mix-radio-lastfm"]
+aliases: ["/blog/new-mix-radio-lastfm"]
 ---
 Since Spotify I've slightly neglected my Last.fm radio favouring playlisted music over radio style chosen tracks, but I may start using the Last.fm radio again since they've introduced the new 'Mix Radio' station. It's a great way to discover new music without being overwhelmed by too many unfamiliar tracks.
 

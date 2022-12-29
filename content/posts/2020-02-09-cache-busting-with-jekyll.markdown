@@ -2,7 +2,7 @@
 title: "Cache Busting with Jekyll"
 date: "2020-02-09 11:00:00 +0000"
 tags: [ "Jekyll" ]
-aliases: ["blog/cache-busting-with-jekyll"]
+aliases: ["/blog/cache-busting-with-jekyll"]
 ---
 If you're running Jekyll and updating styles fairly regularly, you may want to add a cache busting line to your styles and scripts to ensure you (and your visitors) are always accessing the latest version of your assets.
 

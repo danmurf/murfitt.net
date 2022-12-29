@@ -2,7 +2,7 @@
 title: "Another CodeIgniter book review on the way"
 date: "2010-05-08 10:32:00 +0000"
 tags: [ "CodeIgniter" ]
-aliases: ["blog/another-codeigniter-book-review-way"]
+aliases: ["/blog/another-codeigniter-book-review-way"]
 ---
 I'll be posting another CodeIgniter book review for Packt Publishing shortly: '[CodeIgniter 1.7 Professional Development' by Adam Griffiths](http://www.packtpub.com/codeigniter-1-7-professional-development/book/mid/0405109at6rt?utm_source=murfitt.net&utm_medium=affiliate&utm_content=blog&utm_campaign=mdb_003216).
 

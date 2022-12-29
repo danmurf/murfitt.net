@@ -2,7 +2,7 @@
 title: "Book Review - Instant E-commerce with OpenCart: Build a Shop [Instant] by Murat Yilmaz (Packt Publishing)"
 date: "2013-07-02 21:07:00 +0000"
 tags: [ "Web Development", "OpenCart", "Book Reviews" ]
-aliases: ["blog/book-review-instant-e-commerce-opencart-build-shop-instant-murat-yilmaz-packt-publishing"]
+aliases: ["/blog/book-review-instant-e-commerce-opencart-build-shop-instant-murat-yilmaz-packt-publishing"]
 ---
 I’ve just been going through my first ‘Instant’ book from Packt Publishing - Instant E-Commerce with OpenCart: Build a Shop [Instant] by Murat Yilmaz. They kindly sent me a copy to review, so here’s a quick summary of what to expect and what’s included:
 

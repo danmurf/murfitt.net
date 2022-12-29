@@ -2,7 +2,7 @@
 title: "Short Variable Names in Go"
 date: "2020-05-24 06:00:00 +0000"
 tags: [ "Golang" ]
-aliases: ["blog/short-variable-names-in-go"]
+aliases: ["/blog/short-variable-names-in-go"]
 ---
 When I first started learning Go, I heard a lot of people talk about the idiomatic way of doing things. "Sure, that way works, but *this* is the way we do it in Go." I'm OK with that - a strict convention can give every piece of code a strong sense of familiarity - and Go has quite a few of these. One such convention is to use [short variable names](https://github.com/golang/go/wiki/CodeReviewComments#variable-names).
 

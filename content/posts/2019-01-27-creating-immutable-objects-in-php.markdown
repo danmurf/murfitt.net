@@ -2,7 +2,7 @@
 title: "Creating immutable objects in PHP"
 date: "2019-01-27 20:00:00 +0000"
 tags: [ "PHP", "Object Oriented Programming" ]
-aliases: ["blog/creating-immutable-objects-in-php"]
+aliases: ["/blog/creating-immutable-objects-in-php"]
 ---
 You may have seen the `\DateTimeImmutable` class being used, and wondered why is this different from the `\DateTime` class? I guess it's the same...but immutable, right? Why would I want to use an immutable object? Here's a brief overview.
 

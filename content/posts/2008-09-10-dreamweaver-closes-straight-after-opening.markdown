@@ -2,7 +2,7 @@
 title: "Dreamweaver closes straight after opening"
 date: "2008-09-10 19:29:00 +0000"
 tags: [ "Web Development", "Web Design" ]
-aliases: ["blog/dreamweaver-closes-straight-after-opening"]
+aliases: ["/blog/dreamweaver-closes-straight-after-opening"]
 ---
 This really is one of the strangest software bugs I've come across!
 

@@ -2,7 +2,7 @@
 title: "Check and clear cache in CodeIgniter with this Output extension"
 date: "2012-04-22 19:06:00 +0000"
 tags: [ "Web Development", "PHP", "CodeIgniter" ]
-aliases: ["blog/check-and-clear-cache-codeigniter"]
+aliases: ["/blog/check-and-clear-cache-codeigniter"]
 ---
 I decided to write an extension to the CodeIgniter core Output library as it's great for working with cache but doesn't contain any mechanisms for clearing or managing the cache.
 

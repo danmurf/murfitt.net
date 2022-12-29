@@ -2,7 +2,7 @@
 title: "Murfitt.net is now on Jekyll"
 date: "2020-02-07 20:36:00 +0000"
 tags: [ "Jekyll" ]
-aliases: ["blog/murfitt-net-now-on-jekyll"]
+aliases: ["/blog/murfitt-net-now-on-jekyll"]
 ---
 This website has been run on various CMSs and frameworks over the years. Joomla, Drupal, Laravel, Symfony...and now Jekyll.
 

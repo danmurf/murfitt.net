@@ -2,7 +2,7 @@
 title: "New vlog"
 date: "2013-03-24 15:28:00 +0000"
 tags: [ "Videos", "Blog", "YouTube" ]
-aliases: ["blog/new-vlog"]
+aliases: ["/blog/new-vlog"]
 ---
 I've just started a YouTube vlog covering news, tips, reviews etc. Check it out, and if you like it, subscribe :)
 

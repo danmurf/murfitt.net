@@ -2,7 +2,7 @@
 title: "CodeIgniter 1.7.0 Released"
 date: "2008-10-24 10:30:00 +0000"
 tags: [ "Web Development", "PHP", "CodeIgniter" ]
-aliases: ["blog/codeigniter-170-released"]
+aliases: ["/blog/codeigniter-170-released"]
 ---
 It's that wonderful time again! CodeIgniter 1.7.0 has been released, so it's time to upgrade.
 
