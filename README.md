@@ -18,3 +18,4 @@ hugo new blog/my-blos.md
 - [ ] About page
 - [ ] Contact page
 - [ ] Home page
+- [ ] Fix footer layout
