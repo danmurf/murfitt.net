@@ -1,4 +1,10 @@
-baseURL = 'https://murfitt.net/'
-languageCode = 'en-us'
+baseURL = 'https://murfitt.net'
+languageCode = 'en-gb'
 title = 'Dan Murfitt'
-theme = 'murfittnet'
+theme = 'ananke'
+
+[permalinks]
+    posts = '/blog/:title/'
+
+[taxonomies]
+    tag = 'tags'
