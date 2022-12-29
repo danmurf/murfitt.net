@@ -6,4 +6,4 @@ aliases: ["/blog/new-vlog"]
 ---
 I've just started a YouTube vlog covering news, tips, reviews etc. Check it out, and if you like it, subscribe :)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FWj0zlnJ-Qg" frameborder="0" allowfullscreen></iframe>
+{{< youtube FWj0zlnJ-Qg >}}
