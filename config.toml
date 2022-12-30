@@ -1,7 +1,6 @@
 baseURL = 'https://murfitt.net'
 languageCode = 'en-gb'
 title = 'Dan Murfitt'
-theme = 'ananke'
 sectionPagesMenu = "main"
 enableRobotsTXT = true
 
@@ -42,3 +41,6 @@ enableRobotsTXT = true
     [privacy.youtube]
         disable = false
         privacyEnhanced = true
+
+[build]
+    writeStats = true
