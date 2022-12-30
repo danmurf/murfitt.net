@@ -13,7 +13,7 @@ hugo new blog/my-blos.md
 ```
 
 ## ToDo
-- [ ] Rename all imported posts (remove date prefix)
+- [X] Rename all imported posts (remove date prefix)
 - [ ] Replace all embedded youtube, vimeo and flickr content with shortcodes
 - [ ] About page
 - [ ] Contact page
