@@ -1,4 +1,46 @@
-baseURL = 'https://murfitt.net/'
-languageCode = 'en-us'
+baseURL = 'https://murfitt.net'
+languageCode = 'en-gb'
 title = 'Dan Murfitt'
-theme = 'murfittnet'
+sectionPagesMenu = "main"
+enableRobotsTXT = true
+
+[permalinks]
+    blog = '/blog/:title/'
+
+[taxonomies]
+    tag = 'tags'
+
+[params]
+    description = "Software engineering, web development and technology"
+    facebook = "https://www.facebook.com/dan.murfitt"
+    twitter = "https://twitter.com/danmurf"
+    instagram = "https://www.instagram.com/danmurf/"
+    youtube = "https://www.youtube.com/c/DanMurfitt"
+    github = "https://github.com/danmurf"
+    linkedin = "https://www.linkedin.com/in/danmurfitt/"
+
+[privacy]
+    [privacy.disqus]
+        disable = false
+    [privacy.googleAnalytics]
+        anonymizeIP = true
+        disable = false
+        respectDoNotTrack = true
+        useSessionStorage = true
+    [privacy.instagram]
+        disable = false
+        simple = true
+    [privacy.twitter]
+        disable = false
+        enableDNT = true
+        simple = true
+    [privacy.vimeo]
+        disable = false
+        enableDNT = true
+        simple = true
+    [privacy.youtube]
+        disable = false
+        privacyEnhanced = true
+
+[build]
+    writeStats = true
