@@ -143,8 +143,6 @@ markup:
     # noClasses: false
     style: monokai
 
-
-
 permalinks:
   blog: '/blog/:title/'
 
