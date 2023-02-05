@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-ShowShareButtons: false
+robotsNoIndex: true
 ---
 
 This is just a personal blog. I use a few tools to run the website, and I've listed them below.

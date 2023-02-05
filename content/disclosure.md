@@ -1,6 +1,6 @@
 ---
 title: "Disclosure Policy"
-ShowShareButtons: false
+robotsNoIndex: true
 ---
 
 This policy is valid from 22 December 2009

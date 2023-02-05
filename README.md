@@ -16,6 +16,6 @@ hugo new blog/my-blos.md
 - [X] Rename all imported posts (remove date prefix)
 - [ ] Replace all embedded youtube, vimeo and flickr content with shortcodes
 - [X] About page
-- [ ] Contact page
+- [X] Contact page
 - [X] Home page
-- [ ] Fix footer layout
+- [X] Fix footer layout
