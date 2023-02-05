@@ -1,0 +1,38 @@
+baseURL: 'https://murfitt.net'
+languageCode: en-gb
+title: Dan Murfitt
+sectionPagesMenu: main
+enableRobotsTXT: true
+theme: PaperMod
+
+permalinks:
+  blog: '/blog/:title/'
+
+taxonomies:
+  tag: tags
+
+privacy:
+  disqus:
+    disable: false
+  googleAnalytics:
+    anonymizeIP: true
+    disable: false
+    respectDoNotTrack: true
+    useSessionStorage: true
+  instagram:
+    disable: false
+    simple: true
+  twitter:
+    disable: false
+    enableDNT: true
+    simple: true
+  vimeo:
+    disable: false
+    enableDNT: true
+    simple: true
+  youtube:
+    disable: false
+    privacyEnhanced: true
+    
+build:
+  writeStats: true
