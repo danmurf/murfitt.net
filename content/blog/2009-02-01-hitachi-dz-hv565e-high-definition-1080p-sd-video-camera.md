@@ -3,10 +3,13 @@ title: "Hitachi DZ-HV565E High Definition (1080p) SD Video Camera"
 date: "2009-02-01 17:26:00 +0000"
 tags: [ "Photography", "Videos" ]
 aliases: ["/blog/hitachi-dz-hv565e-high-definition-1080p-sd-video-camera"]
+cover:
+    image: "http://farm4.static.flickr.com/3368/3243476371_e162be5310.jpg"
+    alt: "Hitachi DZ-HV565E"
+    caption: "Hitachi DZ-HV565E by Dan Murfitt, on Flickr"
+    relative: false
 ---
 I've been looking through some of the little HD SD-based camcorders recently and I came across the Hitachi DZ-HV565E in Argos. However, this video camera seems to be a bit of a mystery online, there just isn't much information about it, I couldn't even find any test footage on YouTube.
-
-<a href="http://www.flickr.com/photos/danmurf/3243476371/" title="Hitachi DZ-HV565E by Dan Murfitt, on Flickr"><img src="http://farm4.static.flickr.com/3368/3243476371_e162be5310.jpg" width="500" height="333" alt="Hitachi DZ-HV565E"></a>
 
 <!--more-->
 
@@ -28,19 +31,19 @@ Here's a quick run through some of the key points in the DZ-HV565E specification
 
 ## What you get
 
-<a href="http://www.flickr.com/photos/danmurf/3244292962/" title="Hitachi DZ-HV565E by Dan Murfitt, on Flickr"><img src="http://farm4.static.flickr.com/3310/3244292962_a7dc1f99fb.jpg" width="500" height="333" alt="Hitachi DZ-HV565E"></a>
+[![Hitachi DZ-HV565E](http://farm4.static.flickr.com/3310/3244292962_a7dc1f99fb.jpg)](http://www.flickr.com/photos/danmurf/3244292962/)
 
-<a href="http://www.flickr.com/photos/danmurf/3244290122/" title="Hitachi DZ-HV565E by Dan Murfitt, on Flickr"><img src="http://farm4.static.flickr.com/3122/3244290122_9eefa04a6a.jpg" width="500" height="333" alt="Hitachi DZ-HV565E"></a>
+[![Hitachi DZ-HV565E](http://farm4.static.flickr.com/3122/3244290122_9eefa04a6a.jpg)](http://www.flickr.com/photos/danmurf/3244290122/)
 
-<a href="http://www.flickr.com/photos/danmurf/3244296420/" title="Hitachi DZ-HV565E by Dan Murfitt, on Flickr"><img src="http://farm4.static.flickr.com/3523/3244296420_e1005da6c7.jpg" width="500" height="333" alt="Hitachi DZ-HV565E"></a>
+[![Hitachi DZ-HV565E](http://farm4.static.flickr.com/3523/3244296420_e1005da6c7.jpg)](http://www.flickr.com/photos/danmurf/3244296420/)
 
 I was quite impressed with the feel of the camera. It's quite small, not pocket small, but not as bulky as some DV based video cameras.
 
-<a href="http://www.flickr.com/photos/danmurf/3243470527/" title="Hitachi DZ-HV565E by Dan Murfitt, on Flickr"><img src="http://farm4.static.flickr.com/3424/3243470527_546c4c215a.jpg" width="500" height="333" alt="Hitachi DZ-HV565E"></a>
+[![Hitachi DZ-HV565E](http://farm4.static.flickr.com/3424/3243470527_546c4c215a.jpg)](http://www.flickr.com/photos/danmurf/3243470527/)
 
-<a href="http://www.flickr.com/photos/danmurf/3243473103/" title="Hitachi DZ-HV565E by Dan Murfitt, on Flickr"><img src="http://farm4.static.flickr.com/3520/3243473103_0d1449a0f7.jpg" width="500" height="333" alt="Hitachi DZ-HV565E"></a>
+[![Hitachi DZ-HV565E](http://farm4.static.flickr.com/3520/3243473103_0d1449a0f7.jpg)](http://www.flickr.com/photos/danmurf/3243473103/)
 
-<a href="http://www.flickr.com/photos/danmurf/3244307534/" title="Hitachi DZ-HV565E by Dan Murfitt, on Flickr"><img src="http://farm4.static.flickr.com/3380/3244307534_467d4d1e10.jpg" width="500" height="333" alt="Hitachi DZ-HV565E"></a>
+[![Hitachi DZ-HV565E](http://farm4.static.flickr.com/3380/3244307534_467d4d1e10.jpg)](http://www.flickr.com/photos/danmurf/3244307534/)
 
 ## In more detail
 
@@ -54,14 +57,14 @@ The stills mode lets you select ISO ratings of 64, 100, 200, 400 and auto. There
 
 Here's a quick video I made today. This was recorded in the highest quality mode (1080p fine) in the landscape setting. At the time of the video it was midday, fairly cloudy and very windy:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nhLtn03MHhw" frameborder="0" allowfullscreen></iframe>
+{{< youtube nhLtn03MHhw >}}
 
 Visit the link below and select "watch in HD" to see the video in full quality:
 [http://uk.youtube.com/watch?v=nhLtn03MHhw](http://uk.youtube.com/watch?v=nhLtn03MHhw)
 
 Here's a quick panoramic I filmed in Norwich:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aqluxGE-JKk" frameborder="0" allowfullscreen></iframe>
+{{< youtube aqluxGE-JKk >}}
 
 Visit the link below and select "watch in HD" to see the video in full quality:
 [http://www.youtube.com/watch?v=aqluxGE-JKk](http://www.youtube.com/watch?v=aqluxGE-JKk)
