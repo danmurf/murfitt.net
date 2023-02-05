@@ -17,7 +17,7 @@ This makes perfect sense. However, the latter part of the comment goes on to mak
 So variable names should be short, but only where it makes sense. This is why you'll often see `w` and `r` used in a HTTP handler function. The context is clear, so there is little ambiguity as to what those variables represent. Anything longer would be unnecessary.
 
 ```go
-http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
+http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request)) {
     fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
 })
 ```
