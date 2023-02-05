@@ -47,4 +47,4 @@ As for now, work is still being carried out on the new APIs and critical bugs. E
 
 If you’d like to see the full keynote, here it is - it’s about an hour long, but if you use or are interested in Drupal you don’t want to miss what’s coming up.
 
-<iframe width="420" height="315" src="//www.youtube-nocookie.com/embed/8uhNFoOnz_g" frameborder="0" allowfullscreen></iframe>
+{{< youtube 8uhNFoOnz_g>}}

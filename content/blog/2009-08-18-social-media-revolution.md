@@ -4,7 +4,7 @@ date: "2009-08-18 20:08:00 +0000"
 tags: [ "Videos", "Social Media" ]
 aliases: ["/blog/social-media-revolution"]
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sIFYPQjYhv8" frameborder="0" allowfullscreen></iframe>
+{{< youtube sIFYPQjYhv8>}}
 
 Very interesting, thought provoking video. We are well and truly hooked into social media - there's no turning back now!
 

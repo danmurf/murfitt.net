@@ -10,13 +10,13 @@ A few years ago Shawn Frayne came up with an ingenious way of generating electri
 
 ## Shawn Frayne talks about the windbelt
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AMojRXK14jU" frameborder="0" allowfullscreen></iframe>
+{{< youtube AMojRXK14jU >}}
 
 ## Gallopin' Gertie
 
 Here's a clip of the Tacoma Narrows Bridge (Gallopin' Gertie) twisting and vibrating under 40mph winds.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j-zczJXSxnw" frameborder="0" allowfullscreen></iframe>
+{{< youtube j-zczJXSxnw >}}
 
 ## Sources
 

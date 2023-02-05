@@ -17,11 +17,11 @@ That’s probably down to preference, as they are both very similar. I’m going
 
 Kevin Rose is an investor in both Foursquare and Gowalla, so here’s a quick video of him talking about how these work and some of the features.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UlJy343uJdE" frameborder="0" allowfullscreen></iframe>
+{{<youtube UlJy343uJdE>}}
 
 Here’s another video reviewing the iPhone and Android apps for Foursquare and Gowalla.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dXeOIgGgvMs" frameborder="0" allowfullscreen></iframe>
+{{<youtube dXeOIgGgvMs>}}
 
 ## Privacy
 

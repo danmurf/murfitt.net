@@ -9,11 +9,12 @@ I've just been playing with Photosynth for the iPhone. It allows you to take mul
 <!--more-->
 
 Here's a panoramic I created while standing in the same place:
-	
-<iframe frameborder="0" height="300" src="http://photosynth.net/embed.aspx?cid=9a5a0135-0f9d-4d50-a019-4c9fc6d362d7&delayLoad=true&slideShowPlaying=false" width="500"></iframe>
+
+[No longer supported 😢 `http://photosynth.net/embed.aspx?cid=9a5a0135-0f9d-4d50-a019-4c9fc6d362d7&delayLoad=true&slideShowPlaying=false`]
 
 Here's a synth which someone has created from different angles and locations.
-<iframe frameborder="0" height="300" src="http://photosynth.net/embed.aspx?cid=50cf7db9-d497-457d-8206-9ff88f2c2800&delayLoad=true&slideShowPlaying=false" width="500"></iframe>
+
+[No longer supported 😢 `http://photosynth.net/embed.aspx?cid=50cf7db9-d497-457d-8206-9ff88f2c2800&delayLoad=true&slideShowPlaying=false`]
 
 Photosynth is a free app available for the iPhone 3G4, iPhone 4, iPad 2 and 4th gen iPod Touch. Enjoy!
 

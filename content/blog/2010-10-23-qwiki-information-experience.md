@@ -10,6 +10,6 @@ The recent TechCrunch disrupt award [saw startup Qwiki](http://techcrunch.com/20
 
 The video below is a demo of the product at TechCrunch Disrupt 2010. If you'd like to sign up for their invite-only alpha test head over to [Qwiki.com](http://qwiki.com/). They also have a few sample Qwikis live on the site.
 
-<iframe src="https://player.vimeo.com/video/15444551" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{{<vimeo 15444551>}}
 
 [Qwiki at TechCrunch Disrupt](http://vimeo.com/15444551) from [Qwiki](http://vimeo.com/qwiki) on [Vimeo](http://vimeo.com/).
