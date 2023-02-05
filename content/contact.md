@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-menu: main
+ShowShareButtons: false
 ---
 
 Contact me page

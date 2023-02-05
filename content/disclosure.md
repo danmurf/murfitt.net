@@ -1,5 +1,6 @@
 ---
 title: "Disclosure Policy"
+ShowShareButtons: false
 ---
 
 This policy is valid from 22 December 2009
