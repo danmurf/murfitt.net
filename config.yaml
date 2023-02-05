@@ -61,7 +61,7 @@ params:
     enabled: true # needs to be explicitly set
     title: Dan Murfitt
     subtitle: "Software engineering, web development and technology"
-    imageUrl: "/dan.jpeg"
+    imageUrl: "dan.jpeg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: Dan Murfitt
