@@ -62,8 +62,8 @@ params:
     title: Dan Murfitt
     subtitle: "Software engineering, web development and technology"
     imageUrl: "dan.jpeg"
-    imageWidth: 120
-    imageHeight: 120
+    imageWidth: 250
+    imageHeight: 250
     imageTitle: Dan Murfitt
     buttons:
       - name: Blog
