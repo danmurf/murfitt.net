@@ -86,9 +86,9 @@ params:
     - name: github
       url: "https://github.com/danmurf"
 
-  # analytics:
-  #   google:
-  #     SiteVerificationTag: "XYZabc"
+  analytics:
+    google:
+      SiteVerificationTag: "i_X2zxbHkmFz5EuSN1p37tKal2UF4ZxpA7QN4hZ-CIY"
   #   bing:
   #     SiteVerificationTag: "XYZabc"
   #   yandex:
