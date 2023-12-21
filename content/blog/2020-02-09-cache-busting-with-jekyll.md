@@ -12,9 +12,9 @@ Firstly, [head over to the Minima theme GitHub repo](https://github.com/jekyll/m
 
 Next, we want to add a unique timestamp to the CSS url so that when a new build occurs, the link will be updated and any browser with the previous version will be forced to download the new version.
 
-```liquid{% raw  %}
+```
 {% assign cacheBust = site.time | date:'?v=%s' %}
-<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url | append: cacheBust }}">{% endraw %}
+<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url | append: cacheBust }}">
 ```
 
 This will result in something like the following
