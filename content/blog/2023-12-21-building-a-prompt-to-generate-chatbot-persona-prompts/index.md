@@ -6,6 +6,7 @@ ShowCodeCopyButtons: true
 description: "This blog discusses an experiment in creating a generative AI prompt that can build other prompts for specific personas using ChatGPT or similar LLM providers. The process involves defining the persona and its desired behavior, coming up with an opening question to be used within the final prompt, and iterating until satisfied with the result."
 cover:
     responsiveImages: true
+    relative: true
     image: "robots-creating-robots.jpeg"
     alt: "A generated image of an impressionist style painting (oil on canvas) of a robot creating another robot."
     caption: "Image generated using Stable Diffusion. An impressionist painting of the future, where robots create other robots. Oil on canvas."
