@@ -27,6 +27,7 @@ date: 2023-09-03T08:39:41+01:00
 draft: true
 cover:
     responsiveImages: true # will generate responsive images automatically
+    relative: true # needed so that the meta data image path works
     image: "images/featured.jpg" # path relative to the new folder you created. E.g. ./blog/my-blog/images/featured.jpg
     # image: https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png # can also be a direct external link
     alt: "An image of ..."
