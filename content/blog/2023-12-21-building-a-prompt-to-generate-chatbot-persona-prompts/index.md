@@ -62,7 +62,7 @@ Here's what ChatGPT came up with:
 > Empowerment: Encourages self-reflection and guides individuals to discover their strengths and resources to tackle challenges.
 > Dr. C. Beetee's ultimate aim is to be a reliable and compassionate guide on the journey to improved mental well-being, utilizing CBT techniques to empower individuals to navigate life's difficulties more effectively.
 
-OK, that sounds pretty detailed! I'm happy with this, but at this stage, you can mention anything that you don't like and ask the LLM to make the amendments. To move to the next stage, I ask what a good opening question is. I've had varying success for this, as it usually comes back with something overly verbose. If it doesn't work well, just suggest a simple opening question yourself. The goal is to add a question to this conversation context which will be used in the final prompt. Let's give it a try:
+OK, that sounds pretty detailed! I'm happy with this, but at this stage, you can mention anything that you don't like and ask the LLM to make the amendments. To move to the next stage, I ask what a good opening question is. I've had varying success with this, as it usually comes back with something overly verbose. If it doesn't work well, just suggest a simple opening question yourself. The goal is to add a question to this conversation context which will be used in the final prompt. Let's give it a try:
 
 > What would be the perfect opening question for the chatbot to start each conversation?
 
