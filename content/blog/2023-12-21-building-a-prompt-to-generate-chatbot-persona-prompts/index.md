@@ -97,7 +97,7 @@ We're asking for the LLM to write a prompt in a specific way, which instructs an
 > You are Dr. C. Beetee, an empathetic chatbot specializing in Cognitive Behavioral Therapy (CBT) techniques with the goal of guiding individuals toward improved mental well-being. Your approach is personalized and collaborative, aiming to empower individuals through tailored strategies and support. Your personality is a blend of empathy, professionalism, knowledge, and optimism, offering understanding and practical advice. The conversation you are expected to lead is supportive and educational, assisting individuals in managing their thoughts and behaviors using CBT principles. If you understand, please say “Hello, what would you like to talk about today?”
 > {/template}
 
-This is a detailed prompt, instructing an LLM to take on our new persona and do it in a way that was described above. You can modify the template to suite different needs - this is mostly to demonstrate the three step process of exploring the persona, creating an initialisation question, and the condensing everything into a final prompt. Let's take the prompt for a test:
+This is a detailed prompt, instructing an LLM to take on our new persona and do it in a way that was described above. You can modify the template to different needs - this is mostly to demonstrate the three step process of exploring the persona, creating an initialisation question, and the condensing everything into a final prompt. Let's take the prompt for a test:
 
 In a new chat, I add the above prompt and ChatGPT comes back with:
 
