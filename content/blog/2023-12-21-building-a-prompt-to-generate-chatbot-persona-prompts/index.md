@@ -1,7 +1,6 @@
 ---
 title: "Building a prompt to generate chatbot persona prompts"
 date: 2023-12-21T10:01:16Z
-draft: true
 tags: ["LLMs", "AI", "Prompt Engineering"]
 ShowCodeCopyButtons: true
 description: "This blog discusses an experiment in creating a generative AI prompt that can build other prompts for specific personas using ChatGPT or similar LLM providers. The process involves defining the persona and its desired behavior, coming up with an opening question to be used within the final prompt, and iterating until satisfied with the result."
@@ -9,7 +8,7 @@ cover:
     responsiveImages: true
     image: "robots-creating-robots.jpeg"
     alt: "A generated image of an impressionist style painting (oil on canvas) of a robot creating another robot."
-    caption: "Image generated using Using Stable Diffusion. An impressionist painting of the future, where robots create other robots. Oil on canvas."
+    caption: "Image generated using using Stable Diffusion. An impressionist painting of the future, where robots create other robots. Oil on canvas."
 ---
 I've recently been experimenting with the idea of creating a generative AI prompt which can build other prompts for specific personas. Sometimes I know roughly what I want, but I don't really know all of the required detail of how to describe it. For example, let's say you want to have a conversation with a Large Language Model (LLM) which directs you to Cognitive Behavioral Therapy (CBT) techniques. You might know that this is what you want, but you might not know all of the detail of how to describe this. To do that you'll first need to know how to write a good, detailed, targeted prompt. On top of that, you'll need to understand exactly how CBT works and then describe it in terms of a prompt. The idea behind this approach is to use the autoregressive native of generative AI (text-to-text) to first have a conversation that extracts exactly what you want, amend and confirm what it suggests, and then narrow this down into a prompt template which you can keep and use in a repeatable way. I will show some examples of how to do this with ChatGPT, however you could experiment with the same approach using any other similar LLM provider, or even a local LLM via GPT4All or Ollama.
 
