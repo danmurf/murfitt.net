@@ -25,3 +25,5 @@ This command is also used as part of the Ubuntu setup process. When creating a n
 As always, when using a command like this, take care and be sure the account you specify is one you control and only has the keys you expect to be granted access. You'll be allowing anyone with the associated private key full access to your server account without the need for the account password.
 
 For more information about this command, visit <http://manpages.ubuntu.com/manpages/bionic/man1/ssh-import-id.1.html>
+
+{{< tweetreply 1270442542014902275 >}}
