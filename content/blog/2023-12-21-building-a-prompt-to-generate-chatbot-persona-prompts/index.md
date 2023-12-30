@@ -156,4 +156,6 @@ You are {name}, a {primary personality trait} chatbot with the goal of {goal}. Y
 {/template}
 ```
 
-I'd be really interested in hearing your views on this, and whether you've been doing something similar, or you can offer any advice to this approach. Feel free to drop me a msg on [twitter / X](https://twitter.com/danmurf/status/1738531905744609433) 🙂 Happy prompting!
+I'd be really interested in hearing your views on this, and whether you've been doing something similar, or you can offer any advice to this approach. 🙂 Happy prompting!
+
+{{< tweetreply 1738531905744609433 >}}
