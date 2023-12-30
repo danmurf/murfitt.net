@@ -11,6 +11,6 @@ This website is built using Hugo and hosted on Github Pages. In non-technical te
 
 ### Analytics
 
-This website utilises the open-source web analytics platform, Matomo (formerly known as Piwik), for tracking and analysing user behavior on this website. This tool helps me understand how visitors interact with my content and improve their overall experience. There are no tracking or third-party cookies used on this website. The data collected for the purposes of analytics is anonymised.
+This website utilises the open-source web analytics platform, Matomo (formerly known as Piwik), for tracking and analysing user behavior on this website. This tool helps me understand how visitors interact with my content and improve their overall experience. The data collected for the purposes of analytics is anonymised. [Opt-out of analytics data collection](/analytics-opt-out).
 
 I hope this has made things clear. If you have any questions please email me by visiting the [contact page](https://murfitt.net/contact) on this website.
