@@ -1,14 +1,14 @@
 {{- /* Footer custom content area start */ -}}
 
-<style>
+{{ $cookieCSS := `
 #cookie-consent-banner {
   display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: var({{- print "--theme" -}});
-  border-top: 1px solid var({{- print "--border" -}});
+  background: var(--theme);
+  border-top: 1px solid var(--border);
   padding: 20px;
   box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
   z-index: 1000;
@@ -31,13 +31,13 @@
 
 #cookie-consent-banner .banner-text p {
   margin: 0;
-  color: var({{- print "--primary" -}});
+  color: var(--primary);
   font-size: 14px;
   line-height: 1.4;
 }
 
 #cookie-consent-banner .banner-text a {
-  color: var({{- print "--primary" -}});
+  color: var(--primary);
   text-decoration: underline;
 }
 
@@ -48,8 +48,8 @@
 }
 
 #cookie-accept {
-  background: var({{- print "--primary" -}});
-  color: var({{- print "--theme" -}});
+  background: var(--primary);
+  color: var(--theme);
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
@@ -60,8 +60,8 @@
 
 #cookie-decline {
   background: transparent;
-  color: var({{- print "--primary" -}});
-  border: 1px solid var({{- print "--primary" -}});
+  color: var(--primary);
+  border: 1px solid var(--primary);
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -72,7 +72,7 @@
 #cookie-settings {
   background: none;
   border: none;
-  color: var({{- print "--secondary" -}});
+  color: var(--secondary);
   font-size: 12px;
   text-decoration: underline;
   cursor: pointer;
@@ -82,7 +82,8 @@
   text-align: center;
   margin-top: 10px;
 }
-</style>
+` }}
+<style>{{ $cookieCSS | safeCSS }}</style>
 
 <!-- Cookie Consent Banner -->
 <div id="cookie-consent-banner">
