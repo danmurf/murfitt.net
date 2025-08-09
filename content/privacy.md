@@ -41,21 +41,9 @@ You can change your cookie preferences at any time by clicking the "Cookie Setti
 - **Browser settings:** Configure your browser to block or delete cookies
 - **Google opt-out:** Use Google's [Ads Settings](https://adssettings.google.com/) or install the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
 
-## Your Rights
-
-Under GDPR, you have the following rights regarding your personal data:
-
-- **Right of access:** Request copies of your personal data
-- **Right to rectification:** Request correction of inaccurate data
-- **Right to erasure:** Request deletion of your personal data
-- **Right to restrict processing:** Request limitation of data processing
-- **Right to data portability:** Request transfer of your data
-- **Right to object:** Object to processing of your personal data
-- **Right to withdraw consent:** Withdraw consent at any time
-
 ## Contact
 
-If you have any questions about this privacy policy or wish to exercise your rights, you can contact me through the [contact page](/contact).
+If you have any questions about this privacy policy, you can contact me through the [contact page](/contact).
 
 ## Updates
 
