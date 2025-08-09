@@ -1,31 +1,109 @@
 {{- /* Footer custom content area start */ -}}
 
+<style>
+#cookie-consent-banner {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var({{- print "--theme" -}});
+  border-top: 1px solid var({{- print "--border" -}});
+  padding: 20px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+#cookie-consent-banner .banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+#cookie-consent-banner .banner-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+#cookie-consent-banner .banner-text p {
+  margin: 0;
+  color: var({{- print "--primary" -}});
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#cookie-consent-banner .banner-text a {
+  color: var({{- print "--primary" -}});
+  text-decoration: underline;
+}
+
+#cookie-consent-banner .banner-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#cookie-accept {
+  background: var({{- print "--primary" -}});
+  color: var({{- print "--theme" -}});
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#cookie-decline {
+  background: transparent;
+  color: var({{- print "--primary" -}});
+  border: 1px solid var({{- print "--primary" -}});
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+#cookie-settings {
+  background: none;
+  border: none;
+  color: var({{- print "--secondary" -}});
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cookie-settings-container {
+  text-align: center;
+  margin-top: 10px;
+}
+</style>
+
 <!-- Cookie Consent Banner -->
-<div id="cookie-consent-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--theme); border-top: 1px solid var(--border); padding: 20px; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 1000;">
-  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 15px; justify-content: space-between;">
-    <div style="flex: 1; min-width: 300px;">
-      <p style="margin: 0; color: var(--primary); font-size: 14px; line-height: 1.4;">
+<div id="cookie-consent-banner">
+  <div class="banner-content">
+    <div class="banner-text">
+      <p>
         This website uses Google Analytics to understand how visitors interact with the site. 
         Analytics cookies are only set if you consent. 
-        <a href="/privacy" style="color: var(--primary); text-decoration: underline;">Learn more</a>
+        <a href="/privacy">Learn more</a>
       </p>
     </div>
-    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-      <button id="cookie-accept" style="background: var(--primary); color: var(--theme); border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; white-space: nowrap;">
-        Accept Analytics
-      </button>
-      <button id="cookie-decline" style="background: transparent; color: var(--primary); border: 1px solid var(--primary); padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; white-space: nowrap;">
-        Decline
-      </button>
+    <div class="banner-buttons">
+      <button id="cookie-accept">Accept Analytics</button>
+      <button id="cookie-decline">Decline</button>
     </div>
   </div>
 </div>
 
 <!-- Cookie Settings Link in Footer -->
-<div style="text-align: center; margin-top: 10px;">
-  <button id="cookie-settings" style="background: none; border: none; color: var(--secondary); font-size: 12px; text-decoration: underline; cursor: pointer;">
-    Cookie Settings
-  </button>
+<div class="cookie-settings-container">
+  <button id="cookie-settings">Cookie Settings</button>
 </div>
 
 <script>
