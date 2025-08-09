@@ -1,0 +1,113 @@
+{{- /* Footer custom content area start */ -}}
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--theme); border-top: 1px solid var(--border); padding: 20px; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); z-index: 1000;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 15px; justify-content: space-between;">
+    <div style="flex: 1; min-width: 300px;">
+      <p style="margin: 0; color: var(--primary); font-size: 14px; line-height: 1.4;">
+        This website uses Google Analytics to understand how visitors interact with the site. 
+        Analytics cookies are only set if you consent. 
+        <a href="/privacy" style="color: var(--primary); text-decoration: underline;">Learn more</a>
+      </p>
+    </div>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <button id="cookie-accept" style="background: var(--primary); color: var(--theme); border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; white-space: nowrap;">
+        Accept Analytics
+      </button>
+      <button id="cookie-decline" style="background: transparent; color: var(--primary); border: 1px solid var(--primary); padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; white-space: nowrap;">
+        Decline
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Cookie Settings Link in Footer -->
+<div style="text-align: center; margin-top: 10px;">
+  <button id="cookie-settings" style="background: none; border: none; color: var(--secondary); font-size: 12px; text-decoration: underline; cursor: pointer;">
+    Cookie Settings
+  </button>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  const banner = document.getElementById('cookie-consent-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const declineBtn = document.getElementById('cookie-decline');
+  const settingsBtn = document.getElementById('cookie-settings');
+  
+  // Check if user has already made a choice
+  const analyticsConsent = localStorage.getItem('analytics_consent');
+  
+  // Show banner if no choice has been made
+  if (!analyticsConsent) {
+    banner.style.display = 'block';
+  }
+  
+  // Accept analytics
+  acceptBtn.addEventListener('click', function() {
+    localStorage.setItem('analytics_consent', 'granted');
+    banner.style.display = 'none';
+    
+    // Update consent mode
+    if (typeof gtag !== 'undefined') {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    }
+    
+    // Reload page to ensure analytics starts tracking
+    window.location.reload();
+  });
+  
+  // Decline analytics
+  declineBtn.addEventListener('click', function() {
+    localStorage.setItem('analytics_consent', 'denied');
+    banner.style.display = 'none';
+    
+    // Update consent mode
+    if (typeof gtag !== 'undefined') {
+      gtag('consent', 'update', {
+        'analytics_storage': 'denied'
+      });
+    }
+  });
+  
+  // Show settings (allow changing choice)
+  settingsBtn.addEventListener('click', function() {
+    const currentChoice = localStorage.getItem('analytics_consent');
+    const message = currentChoice === 'granted' ? 
+      'Analytics cookies are currently enabled. Would you like to disable them?' :
+      'Analytics cookies are currently disabled. Would you like to enable them?';
+    
+    if (confirm(message)) {
+      if (currentChoice === 'granted') {
+        localStorage.setItem('analytics_consent', 'denied');
+        if (typeof gtag !== 'undefined') {
+          gtag('consent', 'update', {
+            'analytics_storage': 'denied'
+          });
+        }
+        // Clear Google Analytics cookies
+        document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + window.location.hostname;
+        document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + window.location.hostname;
+        document.cookie = '_gat=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + window.location.hostname;
+        
+        alert('Analytics cookies have been disabled and existing cookies cleared.');
+      } else {
+        localStorage.setItem('analytics_consent', 'granted');
+        if (typeof gtag !== 'undefined') {
+          gtag('consent', 'update', {
+            'analytics_storage': 'granted'
+          });
+        }
+        window.location.reload();
+      }
+    }
+  });
+  
+})();
+</script>
+
+{{- /* Footer custom content area end */ -}}
