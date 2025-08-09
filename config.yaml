@@ -1,8 +1,11 @@
 baseURL: 'https://murfitt.net'
 languageCode: en-gb
 title: Dan Murfitt
-paginate: 5
 theme: PaperMod
+
+# Pagination configuration (replaces deprecated 'paginate')
+pagination:
+  pagerSize: 5
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -87,6 +90,10 @@ params:
     - name: github
       url: "https://github.com/danmurf"
 
+  # Social configuration (replaces deprecated site.Social)
+  Social:
+    twitter: "danmurf"  # Twitter username without @ symbol
+
   analytics:
     google:
       SiteVerificationTag: "i_X2zxbHkmFz5EuSN1p37tKal2UF4ZxpA7QN4hZ-CIY"
@@ -161,7 +168,7 @@ privacy:
   instagram:
     disable: false
     simple: true
-  twitter:
+  x:
     disable: false
     enableDNT: true
     simple: true
