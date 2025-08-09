@@ -116,6 +116,40 @@
   const declineBtn = document.getElementById('cookie-decline');
   const settingsBtn = document.getElementById('cookie-settings');
   
+  // Helper: clear GA cookies regardless of suffix and domain variant
+  function clearAnalyticsCookies() {
+    try {
+      const cookies = document.cookie.split(';').map(c => c.split('=')[0].trim());
+      const namesToClear = new Set();
+      cookies.forEach(name => {
+        if (name === '_ga' || name === '_gid' || name === '_gat' || name.startsWith('_ga_')) {
+          namesToClear.add(name);
+        }
+      });
+
+      // Domains to attempt: exact host and top-level (with leading dot)
+      const host = location.hostname; // e.g. "murfitt.net" or "www.murfitt.net"
+      const parts = host.split('.');
+      const apex = parts.length > 2 ? parts.slice(-2).join('.') : host; // handle subdomains
+      const domains = [host, `.${apex}`];
+
+      namesToClear.forEach(name => {
+        // Try clearing with and without explicit domain
+        // Path '/'
+        document.cookie = `${name}=; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+        domains.forEach(d => {
+          document.cookie = `${name}=; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=${d}`;
+          // Also attempt with Secure attribute for cookies set as SameSite=None; Secure
+          if (location.protocol === 'https:') {
+            document.cookie = `${name}=; Max-Age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=${d}; Secure; SameSite=None`;
+          }
+        });
+      });
+    } catch (e) {
+      // no-op
+    }
+  }
+  
   // Check if user has already made a choice
   const analyticsConsent = localStorage.getItem('analytics_consent');
   
@@ -151,6 +185,8 @@
         'analytics_storage': 'denied'
       });
     }
+    // Clear any existing GA cookies
+    clearAnalyticsCookies();
   });
   
   // Show settings (allow changing choice)
@@ -168,11 +204,8 @@
             'analytics_storage': 'denied'
           });
         }
-        // Clear Google Analytics cookies
-        document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + window.location.hostname;
-        document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + window.location.hostname;
-        document.cookie = '_gat=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=' + window.location.hostname;
-        
+        // Clear Google Analytics cookies (including GA4 _ga_*)
+        clearAnalyticsCookies();
         alert('Analytics cookies have been disabled and existing cookies cleared.');
       } else {
         localStorage.setItem('analytics_consent', 'granted');
