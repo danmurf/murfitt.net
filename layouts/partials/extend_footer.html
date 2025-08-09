@@ -1,16 +1,17 @@
 {{- /* Footer custom content area start */ -}}
 
 {{ $cookieCSS := `
+/* Bottom cookie banner */
 #cookie-consent-banner {
   display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--theme);
-  border-top: 1px solid var(--border);
-  padding: 20px;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  background: var(--tertiary);
+  border-top: 1px solid var(--secondary);
+  padding: 22px;
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.2);
   z-index: 1000;
 }
 
@@ -20,8 +21,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 15px;
   justify-content: space-between;
+  gap: 16px;
 }
 
 #cookie-consent-banner .banner-text {
@@ -29,11 +30,17 @@
   min-width: 300px;
 }
 
+#cookie-consent-banner .banner-text h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: var(--primary);
+}
+
 #cookie-consent-banner .banner-text p {
   margin: 0;
   color: var(--primary);
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 #cookie-consent-banner .banner-text a {
@@ -43,30 +50,28 @@
 
 #cookie-consent-banner .banner-buttons {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-#cookie-accept {
+#cookie-accept,
+#cookie-decline {
   background: var(--primary);
   color: var(--theme);
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 12px 20px;
+  border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
+  font-weight: 600;
   white-space: nowrap;
 }
 
-#cookie-decline {
-  background: transparent;
-  color: var(--primary);
-  border: 1px solid var(--primary);
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  white-space: nowrap;
+#cookie-accept:focus,
+#cookie-decline:focus {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
 }
 
 #cookie-settings {
@@ -82,21 +87,31 @@
   text-align: center;
   margin-top: 10px;
 }
+
+@media (max-width: 480px) {
+  #cookie-consent-banner {
+  padding: 18px;
+  }
+  #cookie-consent-banner .banner-buttons {
+    justify-content: center;
+  }
+}
 ` }}
 <style>{{ $cookieCSS | safeCSS }}</style>
 
 <!-- Cookie Consent Banner -->
-<div id="cookie-consent-banner">
+<div id="cookie-consent-banner" role="region" aria-labelledby="cookie-consent-title">
   <div class="banner-content">
     <div class="banner-text">
+      <h2 id="cookie-consent-title">Cookie consent</h2>
       <p>
         This website uses Google Analytics to understand how visitors interact with the site. 
         Analytics cookies are only set if you consent. 
-        <a href="/privacy">Learn more</a>
+        <br/><a href="/privacy">Learn more</a>
       </p>
     </div>
     <div class="banner-buttons">
-      <button id="cookie-accept">Accept Analytics</button>
+      <button id="cookie-accept">Accept analytics</button>
       <button id="cookie-decline">Decline</button>
     </div>
   </div>
@@ -155,7 +170,9 @@
   
   // Show banner if no choice has been made
   if (!analyticsConsent) {
-    banner.style.display = 'block';
+  banner.style.display = 'block';
+  // Focus first actionable control for accessibility
+  setTimeout(() => acceptBtn.focus(), 0);
   }
   
   // Accept analytics
@@ -218,6 +235,8 @@
       }
     }
   });
+
+  // No focus trap, as this is a non-modal bottom banner
   
 })();
 </script>
