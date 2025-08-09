@@ -16,6 +16,11 @@ ignoreErrors: ["error-remote-getjson"]
 # Google Analytics GA4
 googleAnalytics: "G-RZTWLHJL5Q"
 
+# Hugo services config for Google Analytics (new schema)
+services:
+  googleAnalytics:
+    ID: "G-RZTWLHJL5Q"
+
 minify:
   disableXML: true
   minifyOutput: true

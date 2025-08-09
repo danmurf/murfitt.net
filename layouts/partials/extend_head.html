@@ -1,6 +1,6 @@
 {{- /* Head custom content area start */ -}}
 
-{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+{{- if or hugo.IsProduction (eq .Site.Params.env "production") }}
 <!-- Google Consent Mode v2 -->
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -25,15 +25,14 @@ if (analyticsConsent === 'granted') {
   });
 }
 </script>
-
-{{- if site.GoogleAnalytics }}
+{{- with .Site.Config.Services.GoogleAnalytics.ID }}
 <!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.GoogleAnalytics }}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '{{ site.GoogleAnalytics }}', {
+gtag('config', '{{ . }}', {
   'anonymize_ip': true
 });
 </script>
