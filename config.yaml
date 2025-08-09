@@ -15,6 +15,8 @@ minify:
   disableXML: true
   minifyOutput: true
 
+ignoreErrors: ["error-remote-getjson"]
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Dan Murfitt
