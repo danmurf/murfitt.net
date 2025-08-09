@@ -8,6 +8,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+ignoreErrors: ["error-remote-getjson"]
 
 # googleAnalytics: UA-123-45
 
