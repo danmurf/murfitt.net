@@ -96,6 +96,8 @@ params:
   analytics:
     google:
       SiteVerificationTag: "i_X2zxbHkmFz5EuSN1p37tKal2UF4ZxpA7QN4hZ-CIY"
+    analyticsz:
+      ID: "ZwSg9rf6GA"
   #   bing:
   #     SiteVerificationTag: "XYZabc"
   #   yandex:
