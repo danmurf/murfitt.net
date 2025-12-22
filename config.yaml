@@ -13,13 +13,6 @@ buildFuture: false
 buildExpired: false
 ignoreErrors: ["error-remote-getjson"]
 
-# Google Analytics GA4
-googleAnalytics: "G-RZTWLHJL5Q"
-
-# Hugo services config for Google Analytics (new schema)
-services:
-  googleAnalytics:
-    ID: "G-RZTWLHJL5Q"
 
 minify:
   disableXML: true
@@ -166,11 +159,6 @@ taxonomies:
 privacy:
   disqus:
     disable: false
-  googleAnalytics:
-    anonymizeIP: true
-    disable: false
-    respectDoNotTrack: true
-    useSessionStorage: true
   instagram:
     disable: false
     simple: true
