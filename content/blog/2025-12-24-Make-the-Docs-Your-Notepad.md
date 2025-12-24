@@ -8,3 +8,5 @@ As you work on projects, you’ll often find yourself making and keeping notes. 
 <!--more-->
 
 It doesn’t have to be perfect. Indeed, most people probably prefer these sorts of docs to get straight to the point, so keeping it concise isn’t just a shortcut, it’s an optimisation. With the growing use of AI tools, keeping knowledge in a “public” accessible place for your organisation has the added bonus of giving AI agents more context, so that they can better help you with your work. This isn’t the same as (nor is it intended to replace) long-form, technical documentation, which often follows a template and goes through scrutiny, review and approval. This is simply an act of “making your notes public”, and in doing so, slowly sharing your knowledge.
+
+{{< tweetreply 2003765758443073819 >}}
