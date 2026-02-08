@@ -70,3 +70,5 @@ The tool has a setting for how much data to generate per 1k characters. The defa
 The tool is very much a work in progress and not ready for production, but if you want to have a play with synthesising training data it's a good place to start.
 
 To find out more, or give it a go yourself, checkout the project at https://github.com/danmurf/datakeg
+
+{{< tweetreply 2020459566429876675 >}}
