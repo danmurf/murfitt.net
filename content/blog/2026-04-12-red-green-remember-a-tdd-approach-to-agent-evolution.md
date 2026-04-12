@@ -16,3 +16,5 @@ I see this as being very similar to Test-Driven Development (TDD). In TDD, you s
 Taking this further with organizational agents, using tools such as Dust for example, you can leverage the feedback loops built into these platforms. When you publish these agents, they often allow you to collect feedback. It is incredibly valuable to encourage people to provide that feedback and then use it to improve the agent over time. Again, rather than trying to come up with the perfect agent on day one, get people actually using it, as you don't know how they'll use it until they do. By addressing their specific use cases, you ensure the agent is never truly "finished" and is instead constantly evolving.
 
 The best approach is to abandon the idea of the perfect agent prompt and instead embrace the fact that the agent isn't going to operate exactly the way you want at the start, guiding and training it over time until you realise that useful agents aren't really built, they are grown.
+
+{{< tweetreply 2043299454783000765 >}}
