@@ -1,5 +1,5 @@
 ---
-title: "Red, Green, Remember: TDD for AI Agents"
+title: "Red, Green, Remember: A TDD Approach to Agent Evolution"
 date: 2026-04-12T11:39:13+01:00
 tags: [ "AI Agents"]
 ---
