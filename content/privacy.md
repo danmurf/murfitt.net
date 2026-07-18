@@ -11,7 +11,7 @@ This website is built using Hugo and hosted on Github Pages. This is a simple st
 
 ## Analytics
 
-This website does not use any analytics or tracking services.
+This website does not use any analytics or tracking services at the moment.
 
 ## Contact
 
