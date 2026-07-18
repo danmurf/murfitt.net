@@ -20,9 +20,11 @@ permissions:
   id-token: write
 
 # Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+# concurrency temporarily removed — ghost runs stuck in queue hold the "pages" lock.
+# Restore once GitHub Support clears the stuck runs (IDs 27813013399, 29649351598, 29649943960).
+# concurrency:
+#   group: "pages"
+#   cancel-in-progress: true
 
 # Default to bash
 defaults:
