@@ -16,7 +16,7 @@ It always feels quite laborious to have to go to my computer, sit at the desk, a
 
 Instead, I wanted to be able to just transcribe my blog post wherever I am on my phone when an idea comes into my head. I can then have that transcription sent to my Hermes Agent, and it would tidy it up for me and publish it to my blog.
 
-In fact, this blog post that you're reading here was published using this method. These aren't AI's words — they're my words, my idea, just tidied up a bit by AI.
+In fact, this blog post that you're reading here was published using this method ([here is a link to the pull request my agent opened for me](https://github.com/danmurf/murfitt.net/pull/26)). These aren't AI's words — they're my words, my idea, just tidied up a bit by AI.
 
 I still think this is different from having AI generate a blog post for you, even if you come up with the idea. It's not the same as you expressing that idea in your own words.
 
