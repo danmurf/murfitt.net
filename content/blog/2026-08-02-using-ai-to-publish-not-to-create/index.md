@@ -2,10 +2,12 @@
 title: "Using AI to Publish, Not to Create"
 date: 2026-08-02T00:00:00Z
 tags: ["AI", "Blogging", "Hermes Agent"]
+cover:
+    relative: true
+    image: "images/featured.jpg"
+    alt: "Dan sitting in the garden with his phone, showing he can publish blog posts from anywhere"
+    caption: "Publishing from the garden — no desk required"
 ---
-
-![Dan sitting in the garden with his phone, showing he can publish blog posts from anywhere](images/featured.jpg)
-*Publishing from the garden — no desk required*
 
 This weekend I've been experimenting with Hermes Agent using the new DeepSeek V4 Flash model. One thing I've been quite interested in is how I can make publishing to my blog a lot easier.
 
