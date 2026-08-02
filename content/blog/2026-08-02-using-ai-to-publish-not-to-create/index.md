@@ -6,8 +6,8 @@ cover:
     responsiveImages: true
     relative: true
     image: "images/featured.jpg"
-    alt: "A screenshot of a Telegram chat showing a voice note being transcribed and published as a blog post by Hermes Agent"
-    caption: "The workflow in action — voice note in, blog post out"
+    alt: "Dan sitting in the garden with his phone, showing he can publish blog posts from anywhere"
+    caption: "Publishing from the garden — no desk required"
 ---
 
 This weekend I've been experimenting with Hermes Agent using the new DeepSeek V4 Flash model. One thing I've been quite interested in is how I can make publishing to my blog a lot easier.
