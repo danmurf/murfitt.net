@@ -3,7 +3,6 @@ title: "Using AI to Publish, Not to Create"
 date: 2026-08-02T00:00:00Z
 tags: ["AI", "Blogging", "Hermes Agent"]
 cover:
-    responsiveImages: true
     relative: true
     image: "images/featured.jpg"
     alt: "Dan sitting in the garden with his phone, showing he can publish blog posts from anywhere"
