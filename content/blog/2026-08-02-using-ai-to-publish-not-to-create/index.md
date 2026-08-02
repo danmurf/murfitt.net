@@ -19,3 +19,5 @@ Instead, I wanted to be able to just transcribe my blog post wherever I am on my
 In fact, this blog post that you're reading here was published using this method. These aren't AI's words — they're my words, my idea, just tidied up a bit by AI.
 
 I still think this is different from having AI generate a blog post for you, even if you come up with the idea. It's not the same as you expressing that idea in your own words.
+
+So what do you think? Do you think it's easier to publish this way? Do you still think this counts as the author's words?
