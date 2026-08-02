@@ -2,6 +2,12 @@
 title: "Using AI to Publish, Not to Create"
 date: 2026-08-02T00:00:00Z
 tags: ["AI", "Blogging", "Hermes Agent"]
+cover:
+    responsiveImages: true
+    relative: true
+    image: "images/featured.jpg"
+    alt: "A screenshot of a Telegram chat showing a voice note being transcribed and published as a blog post by Hermes Agent"
+    caption: "The workflow in action — voice note in, blog post out"
 ---
 
 This weekend I've been experimenting with Hermes Agent using the new DeepSeek V4 Flash model. One thing I've been quite interested in is how I can make publishing to my blog a lot easier.
