@@ -1,0 +1,40 @@
+---
+import { getEntry, render } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import Main from "@/components/Main.astro";
+import Footer from "@/components/Footer.astro";
+import config from "@/config";
+
+export async function getStaticPaths() {
+  const pages = ["contact", "disclosure", "privacy"];
+  return pages.map(page => ({ params: { page } }));
+}
+
+const { page } = Astro.params;
+const entry = await getEntry("pages", page as "contact");
+
+if (!entry) {
+  throw new Error(`Missing content entry: ${page}.md in src/content/pages/`);
+}
+
+const { Content } = await render(entry);
+---
+
+<Layout
+  title={`${entry.data.title} | ${config.site.title}`}
+  description={entry.data.description}
+  ogImage={entry.data.ogImage}
+  canonicalURL={entry.data.canonicalURL}
+>
+  <Header />
+
+  <Breadcrumb />
+
+  <Main pageTitle={entry.data.title} class="app-prose">
+    <Content />
+  </Main>
+
+  <Footer />
+</Layout>
