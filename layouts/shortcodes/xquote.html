@@ -1,0 +1,19 @@
+{{- $user := .Get "user" | default "" -}}
+{{- $id := .Get "id" | default "" -}}
+{{- if and $user $id -}}
+  {{- $url := printf "https://x.com/%v/status/%v" $user $id -}}
+  {{- $query := querify "url" $url "dnt" true "omit_script" true -}}
+  {{- $request := printf "https://publish.x.com/oembed?%s" $query -}}
+  {{- with try (resources.GetRemote $request) -}}
+    {{- with .Err -}}
+      {{- warnidf "xquote-getremote" "The %q shortcode was unable to retrieve the tweet: %s. See %s" $.Name . $.Position -}}
+    {{- else with .Value -}}
+      {{- $data := . | transform.Unmarshal -}}
+      {{- $data.html | safeHTML -}}
+    {{- else -}}
+      {{- warnidf "xquote-getremote" "The %q shortcode was unable to retrieve the tweet. See %s" $.Name $.Position -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- errorf "The %q shortcode requires two named parameters: user and id. See %s" .Name .Position -}}
+{{- end -}}
