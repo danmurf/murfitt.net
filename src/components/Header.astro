@@ -1,0 +1,42 @@
+---
+import { SITE } from '../lib/site';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const links = [
+  { href: '/', label: 'home' },
+  { href: '/blog/', label: 'blog' },
+  { href: '/about/', label: 'about' },
+  { href: '/contact/', label: 'contact' },
+];
+
+function isActive(href: string): boolean {
+  const target = href.replace(/\/$/, '') || '/';
+  if (target === '/') return path === '/';
+  return path === target || path.startsWith(target + '/');
+}
+---
+
+<header class="mx-auto w-full max-w-2xl px-4 pt-8 sm:px-6">
+  <div class="flex items-baseline justify-between">
+    <a href="/" class="font-mono text-sm font-semibold no-underline text-ink-100 hover:text-accent-400">
+      {SITE.title}
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="flex gap-5">
+        {
+          links.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class:list={['nav-link', isActive(link.href) && 'nav-link-active']}
+                aria-current={isActive(link.href) ? 'page' : undefined}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

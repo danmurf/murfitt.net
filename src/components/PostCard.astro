@@ -1,0 +1,35 @@
+---
+import { formatDate } from '../lib/site';
+import { postUrl, tagUrl, type Post } from '../lib/posts';
+
+interface Props {
+  post: Post;
+}
+
+const { post } = Astro.props;
+const url = postUrl(post.data.slug);
+---
+
+<article class="py-5">
+  <h2 class="text-lg font-semibold leading-snug">
+    <a href={url} class="text-ink-100 no-underline hover:text-accent-400">
+      {post.data.title}
+    </a>
+  </h2>
+  <p class="meta mt-1">
+    <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+  </p>
+  {
+    post.data.tags.length > 0 && (
+      <ul class="mt-2 flex flex-wrap gap-2">
+        {post.data.tags.map((tag) => (
+          <li>
+            <a href={tagUrl(tag)} class="tag-pill">
+              {tag}
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</article>

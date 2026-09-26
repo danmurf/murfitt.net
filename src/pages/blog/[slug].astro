@@ -1,0 +1,66 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Tags from '../../components/Tags.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const now = new Date();
+  return posts
+    .filter((p) => p.data.date <= now)
+    .map((post) => ({ params: { slug: post.data.slug }, props: { post } }));
+}
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const { title, date, tags, description, cover } = post.data;
+
+const ogImage = cover?.image
+  ? cover.relative === false || cover.image.startsWith('http')
+    ? cover.image
+    : `/blog/${post.data.slug}/${cover.image}`
+  : undefined;
+---
+
+<Base
+  title={title}
+  description={description}
+  image={ogImage}
+  type="article"
+  publishedTime={date}
+  tags={tags}
+>
+  <article>
+    <header class="mb-8">
+      <h1 class="text-2xl font-bold leading-tight text-ink-100 sm:text-3xl">{title}</h1>
+      <p class="meta mt-2">
+        <time datetime={date.toISOString()}>{new Intl.DateTimeFormat('en-GB', {
+          day: 'numeric',
+          month: 'long',
+          year: 'numeric',
+          timeZone: 'UTC',
+        }).format(date)}</time>
+      </p>
+      {tags.length > 0 && <div class="mt-3"><Tags tags={tags} /></div>}
+    </header>
+
+    {
+      cover && !cover.hiddenInSingle && (
+        <img
+          src={ogImage}
+          alt={cover.alt ?? title}
+          class="mb-8 w-full rounded-lg border border-ink-800"
+          loading="eager"
+        />
+      )
+    }
+
+    <div class="prose prose-invert max-w-none prose-headings:font-semibold prose-a:break-words prose-img:rounded-lg">
+      <Content />
+    </div>
+  </article>
+</Base>

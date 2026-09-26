@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import { getPublishedPosts } from '../lib/posts';
+import { SITE } from '../lib/site';
+
+const posts = await getPublishedPosts();
+const recent = posts.slice(0, 5);
+---
+
+<Base>
+  <section class="mb-14">
+    <div class="flex items-center gap-5">
+      <img
+        src="/dan.jpeg"
+        alt="Dan Murfitt"
+        width="72"
+        height="72"
+        class="size-18 rounded-full border border-ink-700"
+      />
+      <div>
+        <h1 class="text-2xl font-bold text-ink-100">{SITE.title}</h1>
+        <p class="mt-1 text-ink-400">{SITE.description}</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="mb-2 flex items-baseline justify-between">
+      <h2 class="font-mono text-sm font-medium uppercase tracking-wider text-ink-500">
+        Recent posts
+      </h2>
+      <a href="/blog/" class="font-mono text-sm no-underline">All posts &rarr;</a>
+    </div>
+    <div class="divide-y divide-ink-800 border-y border-ink-800">
+      {recent.map((post) => <PostCard post={post} />)}
+    </div>
+  </section>
+</Base>

@@ -1,10 +1,15 @@
-# Generated files by hugo
-public/
-resources/_gen/
-hugo_stats.json
+# build output
+dist/
 
-# Temporary lock file while building
-.hugo_build.lock
+# generated types
+.astro/
 
-# Node
-node_modules
+# dependencies
+node_modules/
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store

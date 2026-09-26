@@ -1,0 +1,21 @@
+---
+import { tagUrl } from '../lib/posts';
+
+interface Props {
+  tags: string[];
+}
+
+const { tags } = Astro.props;
+---
+
+<ul class="flex flex-wrap gap-2">
+  {
+    tags.map((tag) => (
+      <li>
+        <a href={tagUrl(tag)} class="tag-pill">
+          {tag}
+        </a>
+      </li>
+    ))
+  }
+</ul>

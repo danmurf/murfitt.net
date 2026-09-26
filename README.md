@@ -1,36 +1,93 @@
-# Murfitt.net
+# murfitt.net
 
-To build all content, including drafts, and run a web server:
+Built with [Astro](https://astro.build), Tailwind CSS v4, and the Sätteri markdown processor.
 
-```shell
-hugo server --buildDrafts
-```
-
-To create a new blog post:
+## Development
 
 ```shell
-hugo new blog/my-blog.md
+npm run dev
 ```
 
-To create a new blog post which contains images, you will need to create the post in a directory:
+Type-check the project:
 
 ```shell
-hugo new blog/my-blog/index.md
+npm run check
 ```
 
-You can then add an image file to that directory, and refer to it as the cover photo:
+## Building
+
+```shell
+npm run build
+```
+
+Output goes to `dist/`.
+
+## Creating a new blog post
+
+Add a markdown file to `src/content/blog/`:
+
+```md
+---
+title: "My Blog Post"
+slug: my-blog-post
+date: '2026-09-26T09:00:00Z'
+tags:
+  - Tag Name
+description: "Optional description used for SEO and RSS"
+---
+
+Post body here.
+```
+
+Posts are published automatically once their `date` has passed — a daily
+GitHub Actions job rebuilds the site at 06:00 UTC to pick up future-dated posts.
+
+### Images in a post
+
+Create a directory with an `index.md` and place images alongside it:
+
+```
+src/content/blog/my-blog-post/
+├── index.md
+└── featured.jpg
+```
+
+Reference the image in the post body: `![Alt text](featured.jpg)`.
+
+To use an image as the cover (shown at the top of the post and in OG/Twitter cards),
+add front matter:
 
 ```yaml
----
-title: "My Blog"
-date: 2023-09-03T08:39:41+01:00
-draft: true
 cover:
-    responsiveImages: true # will generate responsive images automatically
-    relative: true # needed so that the meta data image path works
-    image: "images/featured.jpg" # path relative to the new folder you created. E.g. ./blog/my-blog/images/featured.jpg
-    # image: https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png # can also be a direct external link
-    alt: "An image of ..."
-    caption: "A picture showing ..."
----
+  image: "featured.jpg"
+  alt: "An image of ..."
+  relative: true
 ```
+
+### Comments
+
+Add a "reply on X" CTA at the end of a post body:
+
+```
+::tweet-reply[1234567890123456789]
+```
+
+(the number is the tweet/status ID to link to)
+
+### Embeds
+
+```md
+::youtube[VIDEO_ID]
+::vimeo[12345678]
+```
+
+## Redirects
+
+Old URLs (from the Hugo/Jekyll/Drupal eras) are mapped in `src/redirects.json`,
+which is wired into Astro's `redirects` config. Each generates a static
+meta-refresh stub page, which works on GitHub Pages.
+
+## Deployment
+
+GitHub Pages via `.github/workflows/astro.yml`. The `CNAME` file in `public/`
+keeps the custom domain (murfitt.net).

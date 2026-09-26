@@ -1,0 +1,40 @@
+---
+interface Props {
+  src: string;
+  alt?: string;
+  caption?: string;
+  link?: string;
+  title?: string;
+  attr?: string;
+  attrlink?: string;
+  class?: string;
+}
+
+const { src, alt, caption, link, title, attr, attrlink, class: className } = Astro.props;
+const imgAlt = alt || caption || '';
+---
+
+<figure class:list={['my-6', className]}>
+  {
+    link ? (
+      <a href={link}>
+        <img src={src} alt={imgAlt} loading="lazy" decoding="async" class={className} />
+      </a>
+    ) : (
+      <img src={src} alt={imgAlt} loading="lazy" decoding="async" class={className} />
+    )
+  }
+  {
+    (title || caption || attr) && (
+      <figcaption class="mt-2 text-center text-sm text-ink-500">
+        {title && <h4 class="font-semibold text-ink-300">{title}</h4>}
+        {(caption || attr) && (
+          <p>
+            {caption}
+            {attrlink ? <a href={attrlink}>{' ' + attr}</a> : attr ? <span>{' ' + attr}</span> : null}
+          </p>
+        )}
+      </figcaption>
+    )
+  }
+</figure>

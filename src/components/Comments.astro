@@ -1,0 +1,14 @@
+---
+interface Props {
+  tweetId: string;
+}
+
+const { tweetId } = Astro.props;
+const url = `https://twitter.com/danmurf/status/${tweetId}`;
+---
+
+<h2 id="comments">Comments</h2>
+<p>
+  If you found this helpful, or have any questions, please feel free to
+  <a href={url} target="_blank" rel="noopener noreferrer">drop me a reply on X (formerly Twitter)</a>.
+</p>
