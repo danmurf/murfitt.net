@@ -1,5 +1,6 @@
 ---
 title: Disclosure Policy
+description: Disclosure and advertising policy for murfitt.net.
 ---
 
 This policy is valid from 22 December 2009

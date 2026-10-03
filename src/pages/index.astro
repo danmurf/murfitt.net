@@ -10,27 +10,27 @@ const recent = posts.slice(0, 5);
 
 <Base>
   <section class="mb-14">
-    <div class="flex items-center gap-5">
+    <div class="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-center sm:gap-8 sm:text-left">
       <img
         src="/dan.jpeg"
         alt="Dan Murfitt"
-        width="72"
-        height="72"
-        class="size-18 rounded-full border border-ink-700"
+        width="96"
+        height="96"
+        class="size-24 rounded-2xl border border-ink-800 object-cover shadow-lg shadow-ink-950/30"
       />
       <div>
-        <h1 class="text-2xl font-bold text-ink-100">{SITE.title}</h1>
-        <p class="mt-1 text-ink-400">{SITE.description}</p>
+        <h1 class="text-3xl font-semibold tracking-tight text-ink-100">{SITE.title}</h1>
+        <p class="mx-auto mt-2 max-w-md text-base text-ink-400 sm:mx-0">{SITE.description}</p>
       </div>
     </div>
   </section>
 
   <section>
-    <div class="mb-2 flex items-baseline justify-between">
-      <h2 class="font-mono text-sm font-medium uppercase tracking-wider text-ink-500">
+    <div class="mb-3 flex items-baseline justify-between">
+      <h2 class="text-xs font-semibold uppercase tracking-wider text-ink-500">
         Recent posts
       </h2>
-      <a href="/blog/" class="font-mono text-sm no-underline">All posts &rarr;</a>
+      <a href="/blog/" class="text-sm font-medium text-ink-400 no-underline transition-colors hover:text-accent-400">All posts &rarr;</a>
     </div>
     <div class="divide-y divide-ink-800 border-y border-ink-800">
       {recent.map((post) => <PostCard post={post} />)}

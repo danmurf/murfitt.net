@@ -9,6 +9,8 @@ export const SITE = {
     github: 'https://github.com/danmurf',
   },
   verification: 'i_X2zxbHkmFz5EuSN1p37tKal2UF4ZxpA7QN4hZ-CIY',
+  defaultImage: '/dan-og.jpeg',
+  defaultImageAlt: 'Dan Murfitt',
 };
 
 export const POSTS_PER_PAGE = 5;

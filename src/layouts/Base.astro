@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE } from '../lib/site';
+import { blogPostingSchema, personSchema, websiteSchema } from '../lib/seo';
 
 interface Props {
   title?: string;
@@ -23,7 +24,25 @@ const {
 } = Astro.props;
 
 const pageTitle = title ? `${title} | ${SITE.title}` : SITE.title;
-const ogImage = image ? new URL(image, Astro.site) : undefined;
+const socialImage = new URL(image ?? SITE.defaultImage, Astro.site);
+const socialImageAlt = SITE.defaultImageAlt;
+const authorSchema = personSchema(
+  SITE.author,
+  SITE.url,
+  [SITE.social.x, SITE.social.linkedin, SITE.social.github],
+);
+const structuredData =
+  type === 'article' && title && publishedTime
+    ? blogPostingSchema({
+        title,
+        description,
+        url: new URL(Astro.url.pathname, Astro.site).toString(),
+        publishedTime,
+        author: authorSchema,
+        publisher: { '@type': 'Person', name: SITE.author },
+        image: socialImage.toString(),
+      })
+    : websiteSchema(SITE.title, description, SITE.url, authorSchema);
 ---
 
 <!doctype html>
@@ -47,15 +66,22 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
     <meta property="og:title" content={title ?? SITE.title} />
     <meta property="og:description" content={description} />
     <meta property="og:locale" content="en_GB" />
-    {ogImage && <meta property="og:image" content={ogImage} />}
-    {publishedTime && <meta property="article:published_time" content={publishedTime.toISOString()} />}
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:image:alt" content={socialImageAlt} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    {publishedTime && (
+      <meta property="article:published_time" content={publishedTime.toISOString()} />
+    )}
 
     <!-- Twitter -->
-    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@danmurf" />
     <meta name="twitter:title" content={title ?? SITE.title} />
     <meta name="twitter:description" content={description} />
-    {ogImage && <meta name="twitter:image" content={ogImage} />}
+    <meta name="twitter:image" content={socialImage} />
+    <meta name="twitter:image:alt" content={socialImageAlt} />
 
     <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
@@ -63,6 +89,8 @@ const ogImage = image ? new URL(image, Astro.site) : undefined;
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/index.xml" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
   </head>
   <body class="flex min-h-screen flex-col">
     <Header />

@@ -54,7 +54,7 @@
 
 @layer components {
   .nav-link {
-    @apply font-mono text-sm no-underline text-ink-400 transition-colors hover:text-accent-400;
+    @apply text-sm font-medium no-underline text-ink-400 transition-colors hover:text-accent-400;
   }
 
   .nav-link-active {
@@ -62,11 +62,11 @@
   }
 
   .tag-pill {
-    @apply font-mono text-xs no-underline text-ink-400 border border-ink-700 rounded-full px-2.5 py-0.5 transition-colors hover:border-accent-600 hover:text-accent-400;
+    @apply text-xs font-medium no-underline text-ink-400 border border-ink-700 rounded-full px-3 py-1 transition-colors hover:border-accent-600 hover:text-accent-400;
   }
 
   .meta {
-    @apply font-mono text-sm text-ink-500;
+    @apply text-sm text-ink-500;
   }
 }
 

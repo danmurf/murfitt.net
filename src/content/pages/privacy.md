@@ -1,5 +1,6 @@
 ---
 title: Privacy
+description: How murfitt.net handles personal data, cookies, analytics and your privacy.
 ---
 
 This privacy policy explains how I collect, use and protect your personal information when you visit this website.
