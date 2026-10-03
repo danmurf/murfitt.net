@@ -25,3 +25,5 @@ If you're planning a large piece of work, and in order to perform the planning y
 When it comes to code review, maybe you want to up the model intelligence slightly so that it can look at the bigger picture in line with the change. But again, maybe it doesn't need the absolute top-level model for this.
 
 So rather than driving everywhere in first gear, I think it's worth experimenting and finding which is the right model for the task that you're trying to perform. This will help you keep as close to the top left quadrant for the majority of your work. Your usage will go further, you'll spend less, and you may end up getting the work done a lot faster.
+
+{{< tweetreply 2106349666967171121 >}}
